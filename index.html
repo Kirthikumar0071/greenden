@@ -18,7 +18,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
        
       
       
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
           </svg>
           
@@ -37,6 +37,26 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         </ul>
 
     </nav>
+    </section>
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000" style="width:50%;height:100vh;right:-50%; ">
+        <div class="text-right p-5">
+            <p id="closeNav" class="inline cursor-pointer">x</p>
+
+        </div>
+        <ul class=" flex  flex-col  items-center gap-10 text-grey-600 ">
+            <li>
+               <a  class="hover:underline  hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a  class="hover:underline hover:text-black" href="product.html">products</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="contact.html">contact</a>
+            </li>
+        </ul>
+
+
     </section>
     <!--header-->
     <section class="bg-green-100 p-4 flex justify-center">
@@ -118,7 +138,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <!--customer-->
         <section class="container">
         <h1 class="font-bold mt-5  text-3xl text-center">Customer Reviews</h1>
-        <div class="flex flex-col ml-20 mr-5 gap-5 justify-between text-white m-5">
+        <div class="flex flex-col ml-20 mr-5 gap-5 justify-between text-white m-5  max-md:5">
             <div class="  bg-green-700 p-5 container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, excepturi?</p>
             <p class="font-bold text-yellow-400">Genny Mathew</p></div>
             <div class="  bg-green-700 p-5 container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, excepturi?</p>
@@ -141,6 +161,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
         <p>&copy;2021 The Flower Barrel</p>
     </section>
+
+    <script src="index.js"></script>
 
 
 </body>

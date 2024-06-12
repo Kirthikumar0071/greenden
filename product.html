@@ -18,7 +18,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
        
       
       
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+        <svg  id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
           </svg>
           
@@ -38,13 +38,33 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
     </nav>
     </section>
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000" style="width:50%;height:100vh;right:-50%; ">
+        <div class="text-right p-5">
+            <p id="closeNav" class="inline cursor-pointer">x</p>
+
+        </div>
+        <ul class=" flex  flex-col  items-center gap-10 text-grey-600 ">
+            <li>
+               <a  class="hover:underline  hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a  class="hover:underline hover:text-black" href="product.html">products</a>
+            </li>
+            <li>
+                <a class="hover:underline  hover:text-black" href="contact.html">contact</a>
+            </li>
+        </ul>
+
+
+    </section>
 
     <section class="container text-center">
         <h1 class="font-bold mt-5  text-3xl text-center">Our Products</h1>
-        <input type="text" class="border border-black p-2 m-3" style="width: 80%;">
+        <input id="search" type="text" class="border border-black p-2 m-3" style="width: 80%;">
         </section>
         <section class="p-4 text-center">
-            <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 ">
+            <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 ">
                 <div >
                     <img src="./image/plant-1.png" class="inline hover:shadow-xl  transform hover:-translate-y-2"alt="plant">
                     <h1>Rose plant</h1>
@@ -98,6 +118,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
         <p>&copy;2021 The Flower Barrel</p>
     </section>
+
+    <script src="product.js"></script>
 
 
 </body>
