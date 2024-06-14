@@ -22,7 +22,7 @@ var sidenav= document.getElementById("sidenav")
             {
             var productName =productlist[count].querySelector("h1").textContent
 
-        if(productName.toUpperCase().indexOf(enteredValue)<0)
+        if(productName[count].toUpperCase().indexOf(enteredValue)<0)
             {
                  productlist[count].style.display="none"
             }
